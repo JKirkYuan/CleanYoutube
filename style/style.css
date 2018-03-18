@@ -1,3 +1,37 @@
 #stuff{
   text-align: center;
 }
+
+.search-bar{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.search-bar input {
+  width: 32%;
+}
+
+.video-format {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.video-item {
+  margin-bottom: 2rem;
+  padding: 0px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover{
+  background-color: #eee;
+}

@@ -23,8 +23,12 @@ class App extends Component {
         return (
             <div>
                 <SearchBar />
-                <VideoList videos={this.state.videos} />
-                <VideoDetail video={this.state.videos[0]}/>
+                <div className="video-format">
+                    <div className="row">
+                        <VideoList videos={this.state.videos} />
+                        <VideoDetail video={this.state.videos[0]}/>
+                    </div>
+                </div>
             </div>
         );
     }

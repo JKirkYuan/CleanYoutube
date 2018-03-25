@@ -16,8 +16,8 @@ class SearchBar extends Component{
 
   render() {
     return ( //everytime update, think about state
-      <div className="search-bar input-group">
-        <input 
+      <div className="search-bar">
+        <input className="form-control" 
         value={this.state.term} //controlled component
         onChange = {event => this.setState({ term: event.target.value })} />
       </div>

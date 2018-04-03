@@ -34,21 +34,28 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .search-bar input {
-    width: 100%;
+    width: 103%;
+    margin-left: -1rem;
+  }
+  .video-detail{
+    padding-left: 0px !important;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .search-bar input {
-    width: 100%;
+    width: 103%;
+  }
+  .video-detail{
+    padding-left: 0px !important;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .search-bar input {
-    width: 32.5%;
+    width: 33%;
     margin-left: -0.9rem;
   }
 }
@@ -56,7 +63,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .search-bar input {
-    width: 32.5%;
+    width: 33%;
     margin-left: -0.9rem;
   }
 }

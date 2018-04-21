@@ -1,6 +1,8 @@
 # Youtube Clone in React
 
-Simple Youtube Clone that I'm making to learn React
+Simple Youtube Clone that I'm making to learn React. Currently following along with Stephen Grider's tutorial. Changed styling to personalize looks :smile:
+
+![screenshot](YoutubeClone.png)
 
 ### Prerequisites
 

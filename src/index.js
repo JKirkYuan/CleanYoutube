@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from "jquery";
@@ -15,8 +16,11 @@ class App extends Component {
             videos: [], 
             selectedVideo: null
         };
+        this.videoSearch('MKBHD');
+    }
 
-        YTSearch({key: API_KEY, term: 'MKBHD'}, (videos) => {
+    videoSearch(term) {
+        YTSearch({key: API_KEY, term: term}, (videos) => {
             this.setState({ 
                 videos: videos,
                 selectedVideo: videos[0]
@@ -25,9 +29,11 @@ class App extends Component {
     }
 
     render() {
+        const videoSearch = _.debounce( term => {this.videoSearch(term)}, 700);
+
         return (
             <div>
-                <SearchBar />
+                <SearchBar onSearchTermChange={videoSearch}/>
                 <div className="video-format">
                     <div className="row">
                         <VideoList 

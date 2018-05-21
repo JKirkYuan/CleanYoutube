@@ -16,6 +16,7 @@ class App extends Component {
             videos: [], 
             selectedVideo: null
         };
+        
         this.videoSearch('MKBHD');
     }
 
@@ -29,11 +30,11 @@ class App extends Component {
     }
 
     render() {
-        const videoSearch = _.debounce( term => {this.videoSearch(term)}, 700);
+        //const videoSearch = _.debounce( term => {this.videoSearch(term)}, 700);
 
         return (
             <div>
-                <SearchBar onSearchTermChange={videoSearch}/>
+                <SearchBar onSearchTermChange={term => {this.videoSearch(term)}}/>
                 <div className="video-format">
                     <div className="row">
                         <VideoList 
